@@ -1,0 +1,2 @@
+# CacheCounter
+PlatformCache based counter
