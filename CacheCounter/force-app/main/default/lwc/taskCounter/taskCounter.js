@@ -5,18 +5,7 @@ import {refreshApex} from '@salesforce/apex';
 export default class taskCounter extends LightningElement {
 counter;
 error;
-
-
-/*  @wire(getOpenTaskCount) wiredCounter
-  ({ error, data }) {
-    if (data) {
-        this.counter = data;
-    } else if (error) {
-        console.log(error);
-        this.error = error;
-    } ;*/
-
-    wiredMessages;  
+wiredMessages;  
 
     @wire(getOpenTaskCount) 
     wiredCounter(value) {
